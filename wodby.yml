@@ -1,4 +1,5 @@
-pipeline
-  - name: OpenY composer install
-    type: command
-    command: composer create-project ymcatwincities/openy-project openy --no-interaction --no-dev
+pipeline:
+- name: Install composer dependencies
+  type: command
+  command: composer install --no-interaction --optimize-autoloader
+  directory: $APP_ROOT
