@@ -1,0 +1,4 @@
+pipeline
+  - name: OpenY composer install
+    type: command
+    command: composer create-project ymcatwincities/openy-project openy --no-interaction --no-dev
